@@ -26,7 +26,7 @@ apple_image = pygame.image.load("apple.png")
 background_image = pygame.image.load("background.jpg")
 
 # Scale images if necessary
-newton_image = pygame.transform.scale(newton_image, (50, 50))
+newton_image = pygame.transform.scale(newton_image, (60, 70))
 apple_image = pygame.transform.scale(apple_image, (30, 30))
 background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
@@ -38,7 +38,7 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = SCREEN_WIDTH // 2
         self.rect.y = SCREEN_HEIGHT - self.rect.height - 10
-        self.speed = 5
+        self.speed = 2 
 
     def update(self, keys_pressed):
         if keys_pressed[pygame.K_LEFT] and self.rect.left > 0:
