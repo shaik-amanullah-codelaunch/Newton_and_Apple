@@ -30,7 +30,7 @@ background_image = pygame.image.load("background.jpg").convert()
 # Scale images if necessary
 newton_image = pygame.transform.scale(newton_image, (90, 90))
 apple_image = pygame.transform.scale(apple_image, (50, 50))
-coconut_image = pygame.transform.scale(coconut_image, (120, 90))
+coconut_image = pygame.transform.scale(coconut_image, (130, 90))
 background_image = pygame.transform.scale(background_image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 # Generate masks
